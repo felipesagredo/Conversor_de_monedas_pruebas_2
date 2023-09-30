@@ -1,0 +1,16 @@
+{
+  "name": "conversor_de_monedas",
+  "version": "1.0.0",
+  "description": "Aplicación que permite realizar conversión de una moneda de origen (UF) a una moneda de destino (CLP), para una determinada fecha.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "express": "^4.18.2"
+  }
+}
