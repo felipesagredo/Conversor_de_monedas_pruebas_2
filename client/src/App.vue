@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo_uf.png">
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <HelloWorld msg="Conversor UF a CLP" />
 </template>
 
 <script>
