@@ -11,12 +11,13 @@ app.use((req, res, next) => {
     next();
 });
 
-app.get('/uf', async (req, res) => {
+app.get('/uf/:date', async (req, res) => {
     try {
-        const response = await axios.get('https://mindicador.cl/api');
-        const ufValue = response.data.uf.valor;
-        res.send('El valor actual de la UF es $' + ufValue + ' CLP.');
-    } catch (error) {
+        const date = req.params.date;
+        const response = await axios.get(`https://mindicador.cl/api/uf/${date}`);
+        res.send(response.data);
+    }
+    catch (error) {
         res.status(500).send('Error al obtener el valor de la UF');
     }
 });
