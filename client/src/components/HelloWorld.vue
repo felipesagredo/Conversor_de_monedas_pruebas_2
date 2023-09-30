@@ -2,13 +2,12 @@
   <div>
     <h1>Valor Actual de la UF en CLP</h1>
     <button @click="getUFValue">Obtener Valor de la UF</button>
-    <p v-if="ufValue">El valor actual de la UF es ${{ ufValue }} CLP</p>
+    <p v-if="ufValue">{{ ufValue }}</p>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
-
 export default {
   data() {
     return {
@@ -29,5 +28,5 @@ export default {
 </script>
 
 <style scoped>
-/* Estilos opcionales para tu componente */
+/* Estilos opcionales para tu componente*/
 </style>
